@@ -72,4 +72,26 @@ export const store = reactive({
       },
     ],
   },
+
+  pricing: {
+    miniTitle: "Price List",
+    text: "When, while the lovely valley with vapour around meand the merifian sun strikes the upper surface.",
+    cards: [
+      {
+        title: "Designing",
+        subTitle: "PROCESS",
+        price: "40",
+      },
+      {
+        title: "Developing",
+        subTitle: "PRODUCT",
+        price: "60",
+      },
+      {
+        title: "Supporting",
+        subTitle: "CLIENTS",
+        price: "80",
+      },
+    ],
+  },
 });

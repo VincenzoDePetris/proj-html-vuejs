@@ -32,9 +32,10 @@ export default {
 
 <template>
   <BusinessPlanning @exploreMore="clickedButton" @tryNow="clickedButton" />
-  <WhatWeDo @clickCard="clickedCard" @clickedBitton="clickedButton" />
+  <WhatWeDo @clickCard="clickedCard" @clickedButton="clickedButton" />
   <GrowBusiness @exploreMore="clickedButton" @tryNow="clickedButton" />
-  <LatestWork />
+  <LatestWork @clickCard="clickedCard" />
+  <Pricing />
 </template>
 
 <style lang="scss" scoped></style>

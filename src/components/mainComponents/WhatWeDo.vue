@@ -6,7 +6,7 @@ export default {
       store,
     };
   },
-  emits: ["clickCard", "clickedBitton"],
+  emits: ["clickCard", "clickedButton"],
 };
 </script>
 
@@ -31,7 +31,7 @@ export default {
         </div>
       </div>
       <div>
-        <button @click="$emit('clickedBitton')" class="my-5 button orange-btn">
+        <button @click="$emit('clickedButton')" class="my-5 button orange-btn">
           {{ store.whatWeDo.buttonText }}
         </button>
       </div>
