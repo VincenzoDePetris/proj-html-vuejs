@@ -13,11 +13,16 @@ export default {
     };
   },
   components: { AppHeader, AppMain, AppFooter },
+  methods: {
+    clickedButton() {
+      console.log("hai clickato un bottone");
+    },
+  },
 };
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader @signIn="clickedButton" />
   <AppMain />
   <AppFooter />
 </template>

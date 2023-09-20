@@ -13,6 +13,7 @@ export default {
       ],
     };
   },
+  emits: ["signIn"],
   methods: {
     activeClass(index) {
       this.counter = index;
@@ -41,7 +42,7 @@ export default {
           </a>
         </div>
         <div>
-          <button class="" type="submit">Sign In</button>
+          <button @click="$emit('signIn')" class="blue-btn">Sign In</button>
         </div>
       </div>
     </div>
@@ -58,10 +59,6 @@ nav {
     }
   }
   a {
-    color: whitesmoke;
-  }
-  button {
-    background-color: #527ceb;
     color: whitesmoke;
   }
 }
