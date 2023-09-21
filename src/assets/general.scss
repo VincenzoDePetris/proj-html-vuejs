@@ -31,6 +31,16 @@ button {
     rgb(30, 68, 135)
   );
   color: whitesmoke;
+
+  &:hover {
+    background: linear-gradient(
+      to right,
+
+      #f9636b 0%,
+
+      #b6246e 100%
+    );
+  }
 }
 
 .orange-btn {
@@ -42,6 +52,15 @@ button {
     #b6246e 100%
   );
   color: whitesmoke;
+  &:hover {
+    background: linear-gradient(
+      to right,
+
+      rgb(6, 156, 202) 0%,
+
+      rgb(30, 68, 135)
+    );
+  }
 }
 
 .orange {

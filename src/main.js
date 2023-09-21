@@ -14,6 +14,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faStarEmpty,
@@ -21,7 +22,9 @@ library.add(
   faFacebook,
   faTwitter,
   faInstagram,
-  faLinkedin
+  faLinkedin,
+  faArrowRight,
+  faArrowLeft
 );
 
 const app = createApp(App);

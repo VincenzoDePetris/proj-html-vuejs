@@ -38,10 +38,12 @@ export default {
         <h1><span>latest</span> work</h1>
       </div>
       <div class="d-flex">
-        <div class="m-3" @click="goPrev()">-</div>
-        <div class="m-3" @click="goNext()">-></div>
-        <!-- <div><font-awesome-icon icon="fa-solid fa-arrow-left" /></div> -->
-        <!-- <div><font-awesome-icon icon="fa-solid fa-arrow-right" /></div> -->
+        <div class="m-3 icon" @click="goPrev()">
+          <font-awesome-icon icon="fa-solid fa-arrow-left" />
+        </div>
+        <div class="m-3 icon" @click="goNext()">
+          <font-awesome-icon icon="fa-solid fa-arrow-right" />
+        </div>
       </div>
     </div>
     <div class="d-flex">
@@ -69,6 +71,16 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.icon {
+  color: #f9636b;
+  border: solid 2px #f9636b;
+  border-radius: 50%;
+  height: 30px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card {
   width: 35%;
   margin: 50px;
@@ -79,6 +91,16 @@ export default {
   font-size: 0.7rem;
   h5 {
     font-size: 1rem;
+  }
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+
+      #f9636b 0%,
+
+      #b6246e 100%
+    );
   }
 }
 

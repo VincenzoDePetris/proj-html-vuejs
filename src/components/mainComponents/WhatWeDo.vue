@@ -6,7 +6,7 @@ export default {
       store,
     };
   },
-  emits: ["clickCard", "clickedButton"],
+  emits: ["clickCard", "clickedButton", "clickArrow"],
 };
 </script>
 
@@ -25,9 +25,16 @@ export default {
           style="width: 18rem"
           @click="$emit('clickCard')"
         >
-          <img :src="card.img" alt="" class="my-4" />
-          <h3 class="my-2">{{ card.title }}</h3>
-          <p class="my-2">{{ card.text }}</p>
+          <div class="image mt-1">
+            <img :src="card.img" alt="" class="my-4" />
+          </div>
+          <div class="body">
+            <h3 class="my-2">{{ card.title }}</h3>
+            <p class="my-2">{{ card.text }}</p>
+          </div>
+          <p class="icon" @click="$emit('clickArrow')">
+            <font-awesome-icon icon="fa-solid fa-arrow-right" />
+          </p>
         </div>
       </div>
       <div>
@@ -49,9 +56,31 @@ h1 {
   }
 }
 .card {
+  .icon {
+    color: white;
+  }
   img {
     width: 200px;
     height: 150px;
+  }
+
+  &:hover {
+    background-color: rgb(10, 21, 76);
+    color: whitesmoke;
+    border-radius: 50px;
+    .image {
+      background-color: white;
+      border-radius: 50px;
+    }
+    .icon {
+      display: block;
+
+      text-align: center;
+
+      width: 25px;
+      background-color: #f9636b;
+      border-radius: 50%;
+    }
   }
 }
 </style>

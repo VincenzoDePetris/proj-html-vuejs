@@ -38,7 +38,11 @@ export default {
 
 <template>
   <BusinessPlanning @exploreMore="clickedButton" @tryNow="clickedButton" />
-  <WhatWeDo @clickCard="clickedCard" @clickedButton="clickedButton" />
+  <WhatWeDo
+    @clickCard="clickedCard"
+    @clickedButton="clickedButton"
+    @clickArrow="clickedButton"
+  />
   <GrowBusiness @exploreMore="clickedButton" @tryNow="clickedButton" />
   <LatestWork @clickCard="clickedCard" />
   <Pricing @orderNow="clickedOrder" />

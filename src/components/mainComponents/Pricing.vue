@@ -34,7 +34,7 @@ export default {
           <p><b>Exceptional</b> Design</p>
 
           <button class="orange-btn mt-5" @click="$emit('orderNow')">
-            Order Now ->
+            Order Now <font-awesome-icon icon="fa-solid fa-arrow-right" />
           </button>
         </div>
       </div>
