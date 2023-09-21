@@ -4,8 +4,10 @@ export default {
   data() {
     return {
       store,
+      mail: "",
     };
   },
+  emits: ["eMail"],
 };
 </script>
 
@@ -17,12 +19,14 @@ export default {
         <p>{{ store.subscribe.text }}</p>
       </div>
       <div class="search-container">
-        <input
-          type="text"
-          placeholder="Enter Your Email Address"
-          name="search"
-        />
-        <button class="blue-btn">Subscribe</button>
+        <form role="search" @submit.prevent="$emit('eMail', mail)">
+          <input
+            v-model="mail"
+            type="search"
+            placeholder="Enter Your Email Address"
+          />
+          <button class="blue-btn" type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
   </div>

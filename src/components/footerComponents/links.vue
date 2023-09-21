@@ -15,7 +15,8 @@ export default {
       <div class="son">
         <div class="mx-2">
           <div><img :src="store.footer.logoImg" alt="" /></div>
-          <p class="my-5">
+          <div></div>
+          <p class="my-5 text">
             {{ store.footer.text }}
           </p>
         </div>
@@ -35,18 +36,23 @@ export default {
         </div>
       </div>
       <div class="d-flex justify-content-between">
-        <div><p>2020 Phlox.All Rights Reserved.</p></div>
+        <div class="copyright">
+          <p>
+            <font-awesome-icon icon="fa-regular fa-copyright" />2020 Phlox.All
+            Rights Reserved.
+          </p>
+        </div>
         <div class="d-flex">
-          <div class="mx-2">
+          <div class="mx-2 icon">
             <font-awesome-icon icon="fa-brands fa-twitter" />
           </div>
-          <div class="mx-2">
+          <div class="mx-2 icon">
             <font-awesome-icon icon="fa-brands fa-facebook" />
           </div>
-          <div class="mx-2">
+          <div class="mx-2 icon">
             <font-awesome-icon icon="fa-brands fa-instagram" />
           </div>
-          <div class="mx-2">
+          <div class="mx-2 icon">
             <font-awesome-icon icon="fa-brands fa-linkedin" />
           </div>
         </div>
@@ -62,6 +68,15 @@ export default {
   p {
     color: rgb(129, 118, 124);
     &:hover {
+      color: whitesmoke;
+    }
+  }
+
+  .text {
+    color: whitesmoke;
+  }
+  .copyright {
+    p {
       color: whitesmoke;
     }
   }
@@ -84,6 +99,13 @@ export default {
     justify-content: space-between;
     div {
       width: 25%;
+    }
+  }
+
+  .icon {
+    &:hover {
+      color: rgb(129, 118, 124);
+      cursor: pointer;
     }
   }
 }

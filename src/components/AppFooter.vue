@@ -7,10 +7,15 @@ export default {
     subscribe,
     links,
   },
+  methods: {
+    subscribe(mail) {
+      console.log("la tua mail è " + mail);
+    },
+  },
 };
 </script>
 <template>
-  <subscribe />
+  <subscribe @eMail="subscribe" />
   <links />
 </template>
 
