@@ -24,7 +24,7 @@ export default {
     <div class="d-flex justify-content-center">
       <div
         v-for="(card, index) in store.LatestPosts.cards"
-        class="card bg-blue"
+        class="card"
         @click="pointer(index)"
         :class="index == counter ? 'card-selected' : ''"
       >
@@ -51,6 +51,14 @@ export default {
   border: 100px 0;
 }
 .card {
+  background: linear-gradient(
+    to bottom right,
+
+    rgb(2, 2, 48) 0%,
+
+    rgb(23, 49, 111) 100%
+  );
+  color: whitesmoke;
   border-radius: 30px;
   text-align: start;
   display: flex;

@@ -33,7 +33,7 @@ export default {
           <p><b>Extreme</b> Typography</p>
           <p><b>Exceptional</b> Design</p>
 
-          <button class="orange-btn" @click="$emit('orderNow')">
+          <button class="orange-btn mt-5" @click="$emit('orderNow')">
             Order Now ->
           </button>
         </div>
@@ -74,9 +74,16 @@ export default {
   }
 
   .card-dad .card:nth-of-type(2) {
-    background-color: #f9636b;
+    background: linear-gradient(
+      to top right,
+
+      #f9636b 0%,
+
+      #b6246e 100%
+    );
+    color: whitesmoke;
     button {
-      background-color: white;
+      background: white;
       color: #f9636b;
     }
   }

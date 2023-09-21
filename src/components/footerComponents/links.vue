@@ -44,6 +44,9 @@ export default {
   padding-bottom: 20px;
   p {
     color: rgb(129, 118, 124);
+    &:hover {
+      color: whitesmoke;
+    }
   }
   b {
     color: whitesmoke;
@@ -54,6 +57,9 @@ export default {
     a {
       text-decoration: none;
       color: rgb(129, 118, 124);
+      &:hover {
+        color: whitesmoke;
+      }
     }
   }
   .son {

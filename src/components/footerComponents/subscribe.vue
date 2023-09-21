@@ -17,8 +17,12 @@ export default {
         <p>{{ store.subscribe.text }}</p>
       </div>
       <div class="search-container">
-        <input type="text" placeholder="Search.." name="search" />
-        <button type="submit">Submit</button>
+        <input
+          type="text"
+          placeholder="Enter Your Email Address"
+          name="search"
+        />
+        <button class="blue-btn">Subscribe</button>
       </div>
     </div>
   </div>
@@ -38,10 +42,28 @@ export default {
 }
 
 .container {
-  background-color: #f9636b;
+  background: linear-gradient(
+    to left,
+
+    #f9636b 0%,
+
+    #b6246e 100%
+  );
   justify-content: space-between;
   border-radius: 25px;
   align-items: center;
   padding: 20px;
+}
+
+.search-container {
+  background-color: white;
+  padding: 4px 7px;
+  border-radius: 25px;
+  input {
+    border: none;
+  }
+  input:onclick {
+    border: none;
+  }
 }
 </style>
