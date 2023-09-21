@@ -11,7 +11,7 @@ export default {
 </script>
 <template>
   <subscribe />
-  < links/>
+  <links />
 </template>
 
 <style lang="scss" scoped></style>

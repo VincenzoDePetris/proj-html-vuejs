@@ -177,4 +177,32 @@ export const store = reactive({
       },
     ],
   },
+
+  // footer data
+
+  subscribe: {
+    title: "We Offer Awesome Services",
+    text: "When, while lovely valley with vapour around meand meridian sun strikes the upper surface.",
+  },
+
+  footer: {
+    logoImg: "/img/logos/white-logo-2.png",
+    text: "When, while lovely valley teems vapour aroundmeand meridian sun strikes the upper impenetrable",
+    contact: {
+      address:
+        "Patricia C. A,edee 4401 Waldeck Street Grapevine Nashville, Tx 76051",
+      phone: "+99(0) 101 0000 888",
+      mail: "Info@yourdomain.com",
+    },
+  },
+  links: [
+    {
+      title: "Quick Links",
+      link: ["services", "Contact", "Blog"],
+    },
+    {
+      title: "Resources",
+      link: ["Art Design", "Computer", "IT News", "Networking", "Web Security"],
+    },
+  ],
 });
