@@ -26,6 +26,12 @@ export default {
     clickedCard() {
       console.log("Hai cliccato una card");
     },
+    clickedOrder() {
+      console.log('Hai cliccato "order now"');
+    },
+    readMore() {
+      console.log("read more");
+    },
   },
 };
 </script>
@@ -35,7 +41,9 @@ export default {
   <WhatWeDo @clickCard="clickedCard" @clickedButton="clickedButton" />
   <GrowBusiness @exploreMore="clickedButton" @tryNow="clickedButton" />
   <LatestWork @clickCard="clickedCard" />
-  <Pricing />
+  <Pricing @orderNow="clickedOrder" />
+  <LatestPost @ReadMore="readMore" />
+  <PeopleReview />
 </template>
 
 <style lang="scss" scoped></style>

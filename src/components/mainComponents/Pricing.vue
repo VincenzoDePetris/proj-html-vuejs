@@ -6,6 +6,7 @@ export default {
       store,
     };
   },
+  emits: ["orderNow"],
 };
 </script>
 
@@ -15,7 +16,7 @@ export default {
       <h6 class="my-5 orange">{{ store.pricing.miniTitle }}</h6>
       <h1 class="my-3"><span>Our</span> Pricing</h1>
       <p class="my-3">{{ store.pricing.text }}</p>
-      <div class="d-flex justify-content-evenly my-5">
+      <div class="d-flex justify-content-evenly my-5 card-dad">
         <div v-for="card in store.pricing.cards" class="card">
           <h1>{{ card.title }}</h1>
           <p>{{ card.subTitle }}</p>
@@ -32,7 +33,9 @@ export default {
           <p><b>Extreme</b> Typography</p>
           <p><b>Exceptional</b> Design</p>
 
-          <button class="orange-btn">Order Now -></button>
+          <button class="orange-btn" @click="$emit('orderNow')">
+            Order Now ->
+          </button>
         </div>
       </div>
     </div>
@@ -51,6 +54,7 @@ export default {
     white 100%
   );
 }
+
 .container {
   text-align: center;
   .card {
@@ -68,12 +72,20 @@ export default {
     color: rgba(0, 0, 0, 0.3);
     font-size: 15rem;
   }
+
+  .card-dad .card:nth-of-type(2) {
+    background-color: #f9636b;
+    button {
+      background-color: white;
+      color: #f9636b;
+    }
+  }
   .price {
     margin: 25px;
     position: relative;
     .dollar {
       position: absolute;
-      left: 35%;
+      left: 30%;
       top: -15px;
     }
   }

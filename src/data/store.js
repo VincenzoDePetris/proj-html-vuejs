@@ -94,4 +94,62 @@ export const store = reactive({
       },
     ],
   },
+
+  LatestPosts: {
+    miniTitle: "Blog",
+    text: "When, while the lovely valley with vapour around meand the merifian sun strikes the upper surface.",
+    cards: [
+      {
+        date: "April 21, 2019",
+        author: "by Paul",
+        title: "Amazon gets CCI nod to acquire 49% stake in",
+        text: "When, while the lovely valley teems with vapor around me, and the meridian sun s...",
+        img: "/img/main/headway-537308-unsplash-1380x703.jpg",
+      },
+      {
+        date: "April 21, 2019",
+        author: "by Paul",
+        title:
+          "Clearing Corporations get SEBI nod to invest in overnight founds",
+        text: "When, while the lovely valley teems with vapor around me, and the meridian sun s...",
+        img: "img/main/studio-republic-644339-unsplash-1380x703.jpg",
+      },
+      {
+        date: "April 21, 2019",
+        author: "by Paul",
+        title:
+          "Shabnam Dhillion, wife of RSSB chief Gurinder Dhillion, passes away in London...",
+        text: "When, while the lovely valley teems with vapor around me, and the meridian sun s...",
+        img: "img/main/timon-studler-63413-unsplash-1380x703.jpg",
+      },
+    ],
+  },
+
+  peopleReviw: {
+    miniTitle: "Testimonial",
+    text: "When, while the lovely valley with vapour around meand the merifian sun strikes the upper surface.",
+    reviews: [
+      {
+        img: "img/review/fabio-spinelli-695744-unsplash-1024x1024.png",
+        star: "3",
+        text: "When, while lovely valley teems whit vapour around meand meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
+        name: "Michkel Anegl",
+        role: "Marketing Management",
+      },
+      {
+        img: "img/review/philipe-cavalcante-539505-unsplash-1024x1024.png",
+        star: "3",
+        text: "When, while lovely valley teems whit vapour around meand meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
+        name: "Michkel Anegl",
+        role: "Marketing Management",
+      },
+      {
+        img: "img/review/szabo-viktor-1266895-unsplash-1024x1024.png",
+        star: "3",
+        text: "When, while lovely valley teems whit vapour around meand meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
+        name: "Michkel Anegl",
+        role: "Marketing Management",
+      },
+    ],
+  },
 });
