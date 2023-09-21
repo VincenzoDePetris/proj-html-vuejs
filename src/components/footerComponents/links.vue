@@ -34,6 +34,23 @@ export default {
           <p><b>Email: </b>{{ store.footer.contact.mail }}</p>
         </div>
       </div>
+      <div class="d-flex justify-content-between">
+        <div><p>2020 Phlox.All Rights Reserved.</p></div>
+        <div class="d-flex">
+          <div class="mx-2">
+            <font-awesome-icon icon="fa-brands fa-twitter" />
+          </div>
+          <div class="mx-2">
+            <font-awesome-icon icon="fa-brands fa-facebook" />
+          </div>
+          <div class="mx-2">
+            <font-awesome-icon icon="fa-brands fa-instagram" />
+          </div>
+          <div class="mx-2">
+            <font-awesome-icon icon="fa-brands fa-linkedin" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

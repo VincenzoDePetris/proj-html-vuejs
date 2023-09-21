@@ -8,8 +8,21 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import { faStar as faStarFilled } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarEmpty } from "@fortawesome/free-regular-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
-library.add(faStarEmpty, faStarFilled);
+library.add(
+  faStarEmpty,
+  faStarFilled,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin
+);
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
