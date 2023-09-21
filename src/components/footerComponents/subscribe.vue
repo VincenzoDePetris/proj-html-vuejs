@@ -61,9 +61,7 @@ export default {
   border-radius: 25px;
   input {
     border: none;
-  }
-  input:onclick {
-    border: none;
+    outline: none;
   }
 }
 </style>
