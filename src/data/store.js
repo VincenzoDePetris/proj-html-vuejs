@@ -131,7 +131,7 @@ export const store = reactive({
     reviews: [
       {
         img: "img/review/fabio-spinelli-695744-unsplash-1024x1024.png",
-        star: "3",
+        star: "5",
         text: "When, while lovely valley teems whit vapour around meand meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
         name: "Michkel Anegl",
         role: "Marketing Management",
@@ -145,10 +145,35 @@ export const store = reactive({
       },
       {
         img: "img/review/szabo-viktor-1266895-unsplash-1024x1024.png",
-        star: "3",
+        star: "4",
         text: "When, while lovely valley teems whit vapour around meand meridian sun strikes the upper impenetrable follage of my trees, and but a thousand.",
         name: "Michkel Anegl",
         role: "Marketing Management",
+      },
+    ],
+  },
+
+  sponsor: {
+    images: [
+      {
+        img: "/img/sponsor/client-1-1.png",
+        name: "",
+      },
+      {
+        img: "/img/sponsor/clienty-2.png",
+        name: "",
+      },
+      {
+        img: "/img/sponsor/clienty-3.png",
+        name: "",
+      },
+      {
+        img: "/img/sponsor/clienty-4.png",
+        name: "",
+      },
+      {
+        img: "/img/sponsor/client-5.png",
+        name: "",
       },
     ],
   },

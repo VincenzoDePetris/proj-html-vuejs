@@ -44,6 +44,7 @@ export default {
   <Pricing @orderNow="clickedOrder" />
   <LatestPost @ReadMore="readMore" />
   <PeopleReview />
+  <Sponsor />
 </template>
 
 <style lang="scss" scoped></style>
